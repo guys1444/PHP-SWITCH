@@ -1,0 +1,21 @@
+$animals = array('Cat', 'Dog', 'Duck', 'Cow', 'Cricket', 'Hyena', 'Chinchilla');
+         
+         //conditional expression
+         
+switch ( $animals[array_rand( $animals )] )
+{
+    case 'Cat': echo "Meow!";
+    break;
+    case 'Dog': echo "Woof!";
+    break;
+    case 'Duck': echo 'Quack!';
+    break;
+    case 'Cricket': echo 'Chirp!';
+    break;
+    case 'Hyena': echo 'He-he-he-he!';
+    break;
+    case 'Chinchilla': echo 'Squeak!';
+    break;
+    case 'Cow': echo 'Moooooo!';
+    break;
+}
