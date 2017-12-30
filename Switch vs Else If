@@ -1,0 +1,21 @@
+$number = 5;
+switch ( $number ) //condition is only evaluated once
+{ 
+    case 5: echo "Number 5 matched!";
+    break;
+    case 3: echo "Number is less than 5!";
+    break;
+    case 4: echo "Number is less than 5!";
+    break;
+}
+//output: Number 5 matched!
+
+if ( $number > 5 ) //condition evaluated first time
+{
+    echo "Number is greater than 5!";
+}
+elseif ( $number < 10 ) //condition evaluated second time
+{ 
+    echo "Number is less than 10!";
+}
+//output: Number is less than 10!
