@@ -1,0 +1,24 @@
+class Animal
+{
+    //we don't set any value for the properties because every animal will be different
+   
+   public $prey;
+    public $max_speed;
+
+    function make_sound( $sound ) 
+    {
+        echo $sound;
+    }
+}
+
+//we can now create the tiger object from class Animal
+//and set values that are specific to tiger
+
+$tiger = new Animal;
+$tiger->prey = "deer";
+$tiger->max_speed = 40;
+
+echo "I'm an animal that loves to eat $tiger->prey. The fastest I can go is $tiger->max_speed mph";
+$tiger->make_sound("Roar....");
+
+//output: I'm an animal that loves to eat deer. The fastest I can go is 40 mph. Roar.......
